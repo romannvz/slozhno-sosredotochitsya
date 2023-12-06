@@ -2,4 +2,183 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  /* max-inline-size: 1024px; */
+  /* padding: 20px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* background: #000028; */
+  background-image: url(/images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  /* background-image: url(/images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.header__theme-menu {
+  padding-bottom: 273px;
+  padding: 20px 20px 36.5vh;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  color: #FF0070;
+text-align: center;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 100% */
+padding: 0px 13px;
+background-color: transparent;
+border: none;
+}
+
+.header__h1 {
+  display:flex;
+  justify-self: flex-start;
+  padding-bottom: 15vh;
+  width: 75vw;
+  /* height: 17vh; */
+}
+
+.header__main_p {
+  width: 75vw;
+  color: #DB00FF;
+text-shadow: 4px 4px 0px #FF0070;
+font-family: IBM Plex Mono;
+font-size: 157px;
+font-style: normal;
+font-weight: 700;
+line-height: 82.5%; /* 129.525px */
+text-transform: lowercase;
+}
+
+.header__div_p {
+  display: flex;
+  justify-self: flex-end;
+  width: 48vw;
+  background: #FF0070;
+  margin-right: 20px;
+  margin-bottom: 17.5vh;
+}
+
+.header__p {
+  width: 50vw;
+  color: #000028;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+}
+
+.main {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: 1fr;
+  padding: 60px 20px;
+  gap: 80px;
+}
+
+.main_sec {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  /* grid-template-rows: repeat(6, auto); */
+  gap: 20px;
+}
+
+.main_sec:nth-child(2) {
+  /* display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr; */
+  /* grid-template-columns: repeat(3, 32%); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main_sec_title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  max-width: 315px;
+}
+
+.main_sec_title_text {
+  color: #FF0070;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+}
+
+.main_subsec_title_letters {
+  background-color: #FF0070;
+  color: #000028;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+}
+
+.main_subsec_text_letters {
+  color: #F1B2CE;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23.4px; /* 130% */
+}
+
+.main_sec_desc {
+  /* grid-row: 1/6; */
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main_sec_desc:has(.main_subsec + .main_subsec + .main_subsec) {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .main_sec_desc:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.main_subsec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
