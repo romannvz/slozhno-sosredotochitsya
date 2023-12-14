@@ -179,16 +179,13 @@ a:focus-visible {
 .main_sec:nth-child(2) > .main_sec_desc {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 / span 3;
+  grid-row: 2 / 3;
 }
 
 .main_sec:nth-child(2) > .main_sec_title {
   grid-row: 1 / 2;
   grid-column: 1 / 4;
-}
-
-.main_sec:nth-child(2) > .main_sec_desc {
-  grid-column: 1 / span 3;
-  grid-row: 2 / 3;
 }
 
 .main_sec:nth-child(3) > .main_sec_desc {

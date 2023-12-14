@@ -5,10 +5,10 @@
 
 :root {
   /* dark */
-  --dark-background-image: url(/images/cover-image-dark.png);
+  --dark-background-image: url(../images/cover-image-dark.png);
 
   /* light */
-  --light-background-image: url(/images/cover-image-light.png);
+  --light-background-image: url(../images/cover-image-light.png);
 
   /* global */
   --small-page-gap: 10px;
