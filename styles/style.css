@@ -25,7 +25,6 @@
   position: absolute;
   right: 0;
   top: 0;
-  height: 5px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--title-color);
@@ -37,7 +36,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 5px;
   width: 25px;
   height: 25px;
   border-left: 1px solid var(--title-color);
@@ -178,10 +176,9 @@ a:focus-visible {
   gap: var(--large-page-gap);
 }
 
-.main_sec_title {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  max-width: 315px;
+.main_sec:nth-child(2) > .main_sec_desc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main_sec:nth-child(2) > .main_sec_title {
@@ -192,6 +189,26 @@ a:focus-visible {
 .main_sec:nth-child(2) > .main_sec_desc {
   grid-column: 1 / span 3;
   grid-row: 2 / 3;
+}
+
+.main_sec:nth-child(3) > .main_sec_desc {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.main_sec:nth-child(3)
+  > .main_sec_desc
+  > .main_subsec:not(:first-child)
+  > .main_subsec_title
+  > .main_subsec_title_letters {
+  font-weight: 400;
+}
+
+.main_sec_title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  max-width: 315px;
 }
 
 .main_sec_title_text {
@@ -207,25 +224,10 @@ a:focus-visible {
   gap: var(--large-page-gap);
 }
 
-.main_sec_desc:has(.main_subsec + .main_subsec + .main_subsec) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .main_subsec {
   display: flex;
   flex-direction: column;
   gap: var(--small-page-gap);
-}
-
-.main_subsec:has(
-    .main_subsec + .main_subsec + .main_subsec + .main_subsec + .main_subsec
-  ) {
-  gap: var(--large-page-gap);
-}
-
-.main_subsec > .main_subsec > .main_subsec_title > .main_subsec_title_letters {
-  font-weight: 400;
 }
 
 .main_subsec_title_letters {
@@ -307,7 +309,6 @@ a:focus-visible {
   position: absolute;
   right: 0;
   top: 0;
-  height: 5px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--title-color);
@@ -319,7 +320,6 @@ a:focus-visible {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 5px;
   width: 25px;
   height: 25px;
   border-left: 1px solid var(--title-color);

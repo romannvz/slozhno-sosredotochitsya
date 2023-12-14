@@ -10,29 +10,29 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: var(--dark-background-image);
-  --heading-main-color: #DB00FF;
-  --heading-second-color: #FF0070;
-  --main-color: #FF0070;
+  --heading-main-color: #db00ff;
+  --heading-second-color: #ff0070;
+  --main-color: #ff0070;
   --main-text: #000028;
-  --paragraph-color: #F1B2CE;
-  --title-color: #FF0070;
+  --paragraph-color: #f1b2ce;
+  --title-color: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --heading-main-color: #DB00FF;
-  --heading-second-color: #FF0070;
-  --main-color: #FF0070;
-  --main-text: #000028;
-  --paragraph-color: #F1B2CE;
-  --title-color: #FF0070;
-    }
+    --heading-main-color: #db00ff;
+    --heading-second-color: #ff0070;
+    --main-color: #ff0070;
+    --main-text: #000028;
+    --paragraph-color: #f1b2ce;
+    --title-color: #ff0070;
+  }
 
-    .page {
-      background-image: var(--dark-background-image);
-    }
+  .page {
+    background-image: var(--dark-background-image);
+  }
 
-    .header__theme-menu > .rec {
-      display: inline-flex;
-    }
+  .header__theme-menu > .rec {
+    display: inline-flex;
+  }
 }
