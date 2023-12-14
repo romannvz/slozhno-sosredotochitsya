@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* dark */
+  --dark-background-image: url(/images/cover-image-dark.png);
+
+  /* light */
+  --light-background-image: url(/images/cover-image-light.png);
+
+  /* global */
+  --small-page-gap: 10px;
+  --large-page-gap: 20px;
+
+  --tablet-heading-font-size: 120px;
+  --mobile-heading-font-size: 116px;
+  --desktop-heading-font-size: 157px;
+
+  --main-font-family: IBM Plex Mono;
+  --main-font-size: 18px;
+  --main-font-style: normal;
+}

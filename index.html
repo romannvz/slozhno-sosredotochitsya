@@ -41,16 +41,22 @@
             </button>
           </li>
         </ul>
+        <div class="rec">
+          <span>REC</span>
+          <svg>
+            <circle class="dot" cx="11" cy="12.5" r="6" fill="#FF0070"/>
+          </svg>
+        </div>
       </nav>
-      <section class="header__h1">
-        <h1 class="header__main_p">No focus</h1>
+      <section class="header__title">
+        <h1 class="header__title_text">No focus</h1>
       </section>
-      <section class="header__div_p">
-        <h2 class="header__p">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h2>
+      <section class="header__desc">
+        <h2 class="header__desc_text">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h2>
       </section>
     </header>
     <main class="main">
-      <section class="main_sec">
+      <section class="main_sec" id="1">
         <div class="main_sec_title">
           <h2 class="main_sec_title_text">Почему сосредоточиться так сложно</h2>
         </div>
@@ -60,7 +66,7 @@
               <h3 class="main_subsec_title_letters">Многозадачность</h3>
             </div>
             <div class="main_subsec_text">
-              <p class="main_subsec_text_letters">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи выяснили, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
+              <p class="main_subsec_text_letters">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи <a href="#1">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
             </div>
           </div>
           <div class="main_subsec">
@@ -104,7 +110,7 @@
           </div>
         </div>
       </section>
-      <section class="main_sec">
+      <section class="main_sec" id="2">
         <div class="main_sec_title">
           <h2 class="main_sec_title_text">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         </div>
@@ -133,7 +139,7 @@
             <h3 class="main_subsec_title_letters">Прогуляйтесь</h3>
           </div>
           <div class="main_subsec_text">
-            <p class="main_subsec_text_letters">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
+            <p class="main_subsec_text_letters">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="#2">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
           </div>
         </div>
         <div class="main_subsec">
@@ -153,10 +159,22 @@
           </div>
         </div>
       </section>
-      <section class="main_sec_4">
-        
+      <section class="sec_pic">
+        <div class="sec_pic_title">
+          <h3 class="sec_pic_title_letters">А можно в картинках?</h3>
+        </div> 
+        <img class="pic ss" src="/images/sunset.png" loading="lazy" alt="Фотография заката">
+        <img class="pic ic" src="/images/ice-cream.png" loading="lazy" alt="Мороженое из котиков">
+        <img class="pic tape" src="/images/tape.png" loading="lazy" alt="Ретро кассета">
+        <img class="pic books" src="/images/books.png" loading="lazy" alt="Стопка книг">
+        <img class="pic street" src="/images/street.png" loading="lazy" alt="Японская улица">
       </section>
     </main>
+    <footer class="footer">
+      <section class="footer__title">
+        <h2 class="footer__title_text">Focus</h2>
+      </section>
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
